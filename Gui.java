@@ -1,5 +1,7 @@
 package gui;
+
 import javax.swing.*;
+import actions.KeyHandler;
 
 public class Gui 
 {
@@ -17,6 +19,7 @@ public class Gui
         jf.setLocationRelativeTo(null);
         jf.setLayout(null);
         jf.setResizable(false);
+        jf.addKeyListener(new KeyHandler());
         
         d = new Draw();
         d.setBounds(0,0,width,height);
